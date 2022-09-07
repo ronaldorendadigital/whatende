@@ -9,7 +9,7 @@
 #######################################
 system_create_user() {
   print_banner
-  printf "${WHITE} 💻 Agora, vamos criar o usuário para deploy...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Agora, vamos criar o usuÃ¡rio para deploy...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -29,13 +29,15 @@ EOF
 #######################################
 system_git_clone() {
   print_banner
-  printf "${WHITE} 💻 Fazendo download do código whaticket...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Fazendo download do cÃ³digo whaticket...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
 
   sudo su - deploy <<EOF
-  git clone https://github.com/canove/whaticket.git /home/deploy/whaticket/
+  git clone https://github.com/pedroherpeto/whaticket-zdg/ /home/deploy/whaticket/
+#   //git clone https://github.com/canove/whaticket.git /home/deploy/whaticket/
+#   //git clone https://github.com/whatsninja/whatsninja-community /home/deploy/whaticket/
 EOF
 
   sleep 2
@@ -48,7 +50,7 @@ EOF
 #######################################
 system_update() {
   print_banner
-  printf "${WHITE} 💻 Vamos atualizar o sistema...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Vamos atualizar o sistema...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -67,7 +69,7 @@ EOF
 #######################################
 system_node_install() {
   print_banner
-  printf "${WHITE} 💻 Instalando nodejs...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Instalando nodejs...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -87,7 +89,7 @@ EOF
 #######################################
 system_docker_install() {
   print_banner
-  printf "${WHITE} 💻 Instalando docker...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Instalando docker...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -120,7 +122,7 @@ EOF
 #######################################
 system_puppeteer_dependencies() {
   print_banner
-  printf "${WHITE} 💻 Instalando puppeteer dependencies...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Instalando puppeteer dependencies...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -181,7 +183,7 @@ EOF
 #######################################
 system_pm2_install() {
   print_banner
-  printf "${WHITE} 💻 Instalando pm2...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Instalando pm2...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -202,7 +204,7 @@ EOF
 #######################################
 system_snapd_install() {
   print_banner
-  printf "${WHITE} 💻 Instalando snapd...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Instalando snapd...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -223,7 +225,7 @@ EOF
 #######################################
 system_certbot_install() {
   print_banner
-  printf "${WHITE} 💻 Instalando certbot...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Instalando certbot...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -244,7 +246,7 @@ EOF
 #######################################
 system_nginx_install() {
   print_banner
-  printf "${WHITE} 💻 Instalando nginx...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Instalando nginx...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -264,7 +266,7 @@ EOF
 #######################################
 system_nginx_restart() {
   print_banner
-  printf "${WHITE} 💻 reiniciando nginx...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» reiniciando nginx...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -283,7 +285,7 @@ EOF
 #######################################
 system_nginx_conf() {
   print_banner
-  printf "${WHITE} 💻 configurando nginx...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» configurando nginx...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -306,7 +308,7 @@ EOF
 #######################################
 system_certbot_setup() {
   print_banner
-  printf "${WHITE} 💻 Configurando certbot...${GRAY_LIGHT}"
+  printf "${WHITE} ðŸ’» Configurando certbot...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
